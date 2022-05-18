@@ -10,6 +10,7 @@ namespace AS2122_4E_INF_FerraroDomenico_GestioneArticoli
 
         private void btnAggiungi_Click(object sender, EventArgs e)
         {
+           
             Articolo articolo = new Articolo(txtCodice.Text, txtDescrizione.Text, cmbUnitaMisura.Text, Convert.ToDouble(txtPrezzo.Text));
             
             if(dicArticoli.ContainsKey(txtCodice.Text))
@@ -26,9 +27,9 @@ namespace AS2122_4E_INF_FerraroDomenico_GestioneArticoli
 
         private void btnVisualizza_Click(object sender, EventArgs e)
         {
-            foreach(KeyValuePair<string, Articolo> in dicArticoli)
+            foreach(KeyValuePair<string, Articolo> articolo in dicArticoli)
             {
-                lstVisualizza.Items.Add();
+                lstVisualizza.Items.Add(articolo.Descrizione );
             }
         }
     }

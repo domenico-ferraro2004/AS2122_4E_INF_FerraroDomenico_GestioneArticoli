@@ -8,10 +8,10 @@ namespace AS2122_4E_INF_FerraroDomenico_GestioneArticoli
 {
     internal class Articolo
     {
-        string codice;
-        string descrizione;
-        string unitaMisura;
-        double prezzo;
+        private string codice;
+        private string descrizione;
+        private string unitaMisura;
+        private double prezzo;
 
         public Articolo(string codice, string descrizione, string unitaMisura, double prezzo)
         {
