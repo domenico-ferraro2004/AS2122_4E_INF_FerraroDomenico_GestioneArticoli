@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace AS2122_4E_INF_FerraroDomenico_GestioneArticoli
 {
-    internal class Articolo
+    public class Articolo
     {
         private string codice;
         private string descrizione;
         private string unitaMisura;
         private double prezzo;
+
+        
 
         public Articolo(string codice, string descrizione, string unitaMisura, double prezzo)
         {
@@ -20,7 +22,6 @@ namespace AS2122_4E_INF_FerraroDomenico_GestioneArticoli
             this.unitaMisura = unitaMisura;
             this.prezzo = prezzo;
         }
-
         public string Codice { get; }
         public string Descrizione { get; }
         public string UnitaMisura { get; }

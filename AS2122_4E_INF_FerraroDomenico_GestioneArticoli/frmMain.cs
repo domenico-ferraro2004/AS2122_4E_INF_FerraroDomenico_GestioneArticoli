@@ -10,6 +10,7 @@ namespace AS2122_4E_INF_FerraroDomenico_GestioneArticoli
 
         private void btnAggiungi_Click(object sender, EventArgs e)
         {
+            //Aggiunta dell'articolo dentro il dizionario e anche della creazione della classe articolo
            
             Articolo articolo1 = new Articolo(txtCodice.Text, txtDescrizione.Text, cmbUnitaMisura.Text, Convert.ToDouble(txtPrezzo.Text));
             
@@ -27,6 +28,7 @@ namespace AS2122_4E_INF_FerraroDomenico_GestioneArticoli
 
         private void btnVisualizza_Click(object sender, EventArgs e)
         {
+            //Visualizzazione del dizionario tramite keyvaluepair
             foreach(KeyValuePair<string, Articolo> articolo in dicArticoli)
             {
                 lstVisualizza.Items.Add($"{articolo.Value.Visualizza()} ({articolo.Key})");
