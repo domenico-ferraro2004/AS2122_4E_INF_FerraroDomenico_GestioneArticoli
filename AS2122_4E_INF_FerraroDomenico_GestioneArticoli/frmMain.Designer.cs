@@ -37,11 +37,11 @@
             this.btnVisualizza = new System.Windows.Forms.Button();
             this.lstVisualizza = new System.Windows.Forms.ListBox();
             this.grbGestioneArticoli = new System.Windows.Forms.GroupBox();
-            this.lblArticoli = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblArticoli = new System.Windows.Forms.Label();
             this.grbGestioneArticoli.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,6 +82,7 @@
             this.btnAggiungi.TabIndex = 5;
             this.btnAggiungi.Text = "Aggiungi/Modifica Articolo";
             this.btnAggiungi.UseVisualStyleBackColor = true;
+            this.btnAggiungi.Click += new System.EventHandler(this.btnAggiungi_Click);
             // 
             // cmbVisualizza
             // 
@@ -99,6 +100,7 @@
             this.btnVisualizza.TabIndex = 7;
             this.btnVisualizza.Text = "...";
             this.btnVisualizza.UseVisualStyleBackColor = true;
+            this.btnVisualizza.Click += new System.EventHandler(this.btnVisualizza_Click);
             // 
             // lstVisualizza
             // 
@@ -127,32 +129,14 @@
             this.grbGestioneArticoli.TabStop = false;
             this.grbGestioneArticoli.Text = "Gestione Articoli";
             // 
-            // lblArticoli
+            // label6
             // 
-            this.lblArticoli.AutoSize = true;
-            this.lblArticoli.Location = new System.Drawing.Point(60, 399);
-            this.lblArticoli.Name = "lblArticoli";
-            this.lblArticoli.Size = new System.Drawing.Size(16, 15);
-            this.lblArticoli.TabIndex = 10;
-            this.lblArticoli.Text = "...";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 54);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 15);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Codice";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 15);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Descrizione";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(34, 159);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 15);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Prezzo";
             // 
             // label5
             // 
@@ -163,14 +147,32 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Unità di misura";
             // 
-            // label6
+            // label4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 159);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 15);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Prezzo";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(34, 84);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Descrizione";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(34, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Codice";
+            // 
+            // lblArticoli
+            // 
+            this.lblArticoli.AutoSize = true;
+            this.lblArticoli.Location = new System.Drawing.Point(60, 399);
+            this.lblArticoli.Name = "lblArticoli";
+            this.lblArticoli.Size = new System.Drawing.Size(16, 15);
+            this.lblArticoli.TabIndex = 10;
+            this.lblArticoli.Text = "...";
             // 
             // Form1
             // 
