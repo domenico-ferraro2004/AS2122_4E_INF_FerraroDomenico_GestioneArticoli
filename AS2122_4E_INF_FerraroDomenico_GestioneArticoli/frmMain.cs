@@ -1,3 +1,4 @@
+
 namespace AS2122_4E_INF_FerraroDomenico_GestioneArticoli
 {
     public partial class Form1 : Form
@@ -31,7 +32,7 @@ namespace AS2122_4E_INF_FerraroDomenico_GestioneArticoli
             //Visualizzazione del dizionario tramite keyvaluepair
             foreach(KeyValuePair<string, Articolo> articolo in dicArticoli)
             {
-                lstVisualizza.Items.Add($"{articolo.Value.Visualizza()} ({articolo.Key})");
+                lstVisualizza.Items.Add($"{/*articolo.Value.Visualizza()}*/articolo.Value} ({articolo.Key})");
             }
         }
     }
