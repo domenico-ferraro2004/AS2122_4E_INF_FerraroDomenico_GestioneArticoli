@@ -26,6 +26,9 @@ namespace AS2122_4E_INF_FerraroDomenico_GestioneArticoli
         public string UnitaMisura { get; }
         public double Prezzo { get; }
 
-
+        public string Visualizza()
+        {
+            return $"{Descrizione} {UnitaMisura} {Prezzo}";
+        }
     }
 }
